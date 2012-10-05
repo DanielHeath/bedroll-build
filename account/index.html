@@ -4,7 +4,7 @@
   <meta charset=UTF-8>
   <meta name="format-detection" content="telephone=no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <title>Bedroll | Bedroll</title>
+  <title>Account settings | Bedroll</title>
   <link rel="stylesheet" href="/css/index.css" type="text/css">
   <script type="text/javascript" src="/js/vendor/cordova-2.1.0.js"></script>
   <script type="text/javascript" src="/js/vendor/jquery.js"></script>
@@ -17,15 +17,15 @@
   <script type="text/javascript" src="/js/screens/feed.js"></script>
   <script type="text/javascript" src="/js/index.js"></script>
   <script type="text/javascript">
-      app.initialize('index');
+      app.initialize('account');
   </script>
   <style>
-  #navigation .index {color: green;}
+  #navigation .account {color: green;}
   </style>
 
 </head>
 
-  <body id="index">
+  <body id="account">
     <header>
   <nav id="navigation">
   <ol>
@@ -44,7 +44,10 @@
 </nav>
 
 </header>
-    <div id="posts">
+    <div id="account">
+        <label>Name: </label>
+        <input name="name"></input>
+        <input name="submit" type="submit" value="Update"></input>
     </div>
   </body>
 </html>
