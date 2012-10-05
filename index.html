@@ -29,22 +29,46 @@
     <header>
   <nav id="navigation">
   <ol>
-  <li><a href="/" class="index">Home</a></li>
   
     <p></p>
-    <li><a href="/account/index.html" class="account">Account</a></li>
+    <li>
+    <a href="#/account/index.html"
+       class="navlink account"
+       data-module="account" >
+      Account
+    </a></li>
   
     <p></p>
-    <li><a href="/feed/index.html" class="feed">Feed</a></li>
+    <li>
+    <a href="#/feed/index.html"
+       class="navlink feed"
+       data-module="feed" >
+      Feed
+    </a></li>
   
     <p></p>
-    <li><a href="/profile/index.html" class="profile">Profile</a></li>
+    <li>
+    <a href="#/profile/index.html"
+       class="navlink profile"
+       data-module="profile" >
+      Profile
+    </a></li>
   
   </ol>
 </nav>
 
 </header>
-    <div id="posts">
+
+    <div id="feed" class="module">
+      <div id="posts">
+      </div>
     </div>
+
+    <div id="account" class="module">
+        <label>Name: </label>
+        <input name="name"></input>
+        <input name="submit" type="submit" value="Update"></input>
+    </div>
+
   </body>
 </html>
